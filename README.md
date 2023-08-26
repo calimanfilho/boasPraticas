@@ -21,15 +21,15 @@ Antes de prosseguir, verifique as dependências do *software*. O arquivo README 
 
 Muitos softwares em formato .tar.gz precisam ser compilados antes da instalação. Isso é geralmente feito executando os comandos `./configure`, `make` e `make install` no diretório extraído. No entanto, as etapas exatas podem variar de acordo com o software.
 
-Lembre-se de que software instalado manualmente não será gerenciado pelo sistema de gerenciamento de pacotes da distribuição. Isso significa que você precisará atualizar e, se necessário, desinstalar manualmente o software no futuro.
+Lembre-se de que os *softwares* instalados manualmente não serão gerenciados pelo sistema de gerenciamento de pacotes da distribuição. Isso significa que se necessário atualizar o *software*, ele deverá ser desinstalado (opcional) manualmente para que a nova versão seja instalada.
 
-Caso seja necessário poderá ser configurado as variáveis de ambiente, para isso basta abrir o arquivo de perfil do *shell*, que pode ser `~/.bashrc` ou `~/.zshrc`, e adicione as seguintes linhas ao final do arquivo (exemplo do Java):
+Caso seja necessário poderá ser configurado as variáveis de ambiente, para isso basta abrir o arquivo de perfil do *shell*, que pode ser `~/.bashrc` ou `~/.zshrc`, para que seja adicionadas as seguintes linhas ao final do arquivo (exemplo do Java):
 
 ```bash
 export JAVA_HOME=/caminho/para/o/diretorio/do/java
 export PATH=$PATH:$JAVA_HOME/bin
 ```
-Os dois comandos acima tem as seguintes funções, o JAVA_HOME é uma variável de ambiente que aponta para o diretório raiz da instalação do Java. Isso permite que o sistema e outros programas saibam onde encontrar os arquivos relacionados ao Java. O PATH é uma variável de ambiente que contém uma lista de diretórios onde o sistema procura por programas executáveis quando é digitado um comando no terminal. Expande o valor atual da variável PATH, adicionando $JAVA_HOME/bin, permitindo que seja executado os comandos do Java diretamente no terminal, sem ter que especificar o caminho completo para os executáveis.
+Os dois comandos acima tem as seguintes funções, o JAVA_HOME é uma variável de ambiente que aponta para o diretório raiz da instalação do Java. Isso permite que o sistema e outros programas saibam onde encontrar os arquivos relacionados ao Java. O PATH é uma variável de ambiente que contém uma lista de diretórios onde o sistema procura por programas executáveis quando é digitado um comando no terminal, esse comando expande o valor atual da variável PATH, adicionando $JAVA_HOME/bin, assim permitindo que seja executado os comandos do Java diretamente do terminal, sem ter que especificar o caminho completo para os executáveis.
 
 Para aplicar imediatamente as mudanças no ambiente de usuário (altere o comando para o perfil correto do *shell*), execute:
 
@@ -43,4 +43,4 @@ Para verificar se a configuração foi bem-sucedida, execute:
 java -version
 ```
 
-Lembre-se de que a configuração das variáveis de ambiente é específica para o seu usuário. Se você deseja que essas configurações sejam globais, também precisará configurá-las para o usuário root.
+Lembre-se de que a configuração das variáveis de ambiente é específica para o usuário. Se for desejado que as configurações sejam globais, também precisará configurá-las para o usuário root.
