@@ -9,7 +9,7 @@ O empacotamento de software é essencial nas distribuições Linux. As distros D
 
 Um exemplo notável é o Gentoo, que compila pacotes por meio de scripts especiais chamados "ebuilds". No entanto, essa abordagem demanda mais conhecimento e tempo por parte do usuário.
 
-Também pode ser instalados arquivos compactados no formato .tar.gz no Linux, e envolve alguns passos essenciais garantir uma instalação adequada.
+Também pode ser instalados arquivos compactados no formato .tar.gz no Linux, e envolve alguns passos essenciais garantir uma instalação adequada, o primeiro deles é a descompactação e extração do conteúdo do arquivo compactado com o comando:
 
 ```bash
 tar -xzvf arquivo.tar.gz
