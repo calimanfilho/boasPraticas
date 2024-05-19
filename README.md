@@ -3,7 +3,7 @@ Segue abaixo uma série de boas práticas que foram aprendidas ao longo do meu c
 
 ## Instalação de Softwares no Linux
 
-O empacotamento de software é essencial nas distribuições Linux. As distros Debian adotam os pacotes DEB com o gerenciador APT, enquanto as distribuições RPM utilizam pacotes RPM, que podem ser instalados por diversas ferramentas. Embora os pacotes DEB sejam mais comuns devido à popularidade do Debian, os pacotes RPM são mais antigos e têm status oficial.
+O empacotamento de software é essencial nas distribuições Linux. As distros Debian adotam os pacotes DEB com o gerenciador APT, enquanto as distribuições RPM utilizam pacotes RPM, que podem ser instalados por diversas ferramentas.
 
 É importante destacar que os formatos DEB e RPM não são compatíveis entre si. A conversão entre eles é possível, por meio de ferramentas como o "alien", mas essa abordagem não garante resultados perfeitos. Em geral, é recomendável utilizar os pacotes disponíveis nos repositórios da distribuição. Alguns tipos de pacotes, como os ".txz" e ".tbz2" do Slackware, são específicos de certas distribuições.
 
